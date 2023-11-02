@@ -1,0 +1,290 @@
+/*font face*/
+@font-face {
+    /*this is the name I will be using for my font when I want to apply it on a particular element*/
+    font-family: headerfont;
+    /*give the url of the file which have the properties*/
+    src: url();
+}
+body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana;
+}
+header {
+    font-weight: bold;
+}
+/*this will place the logo image float to the left*/
+.headerlogo {
+    float: left;
+    margin-right: 10px;
+}
+/*img is the child element of headerlogo*/
+.headerlogo > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+#mainheader {
+    height: 80px;
+}
+.searchbox {
+    float: right;
+    padding: 5px;
+    margin: 10px 10px;
+    width: 200px;
+    margin-top: 15px;
+}
+#headername {
+    font-size: 40px;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+    font-style: helvetica;
+    /*text shadow for the header name*/
+    text-shadow: 4px 4px 5px #5f2c17;
+}
+
+.backgroudgradiant {
+    /*linear gradient for the background fot the list in the top* shows from brown to orange going left/
+    background: -webkit-linear-gradient(left,#603813, orange);/* for safari 5.1 to 6.0*/
+    background: -o-linear-gradient(right, #603813,orange); /*for opera 11.1 to 12.0*/
+    background: -moz-linear-gradient(right, #603813,orange); /*for firefox 3.6 to 15*/
+    background: linear-gradient(to right, #603813,orange);
+    color: white;
+    margin-top: 6px;
+    font-size: 18px;
+}
+nav {
+    height: 25px;
+    width: 100%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    background-color: #603813;
+   
+}
+nav > ul > li {
+    /*list the li in horizontal in top */
+    display:block;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 0px;
+    
+}
+
+nav > ul > li:hover, nav > ul > li:focus {
+    text-decoration:underline;
+}
+
+.navlink {
+    height: 35px;
+    margin-right: 10px;
+    font-size: 18px;
+    padding-top: 12px;
+    color: white;
+    text-decoration: none;
+}
+.navlink.active {
+
+}
+#welcomeimage {
+    float: left;
+    background-size: 800px 700px;
+    margin-top: 20px;
+}
+#welcomeimage > img {
+    height: 300px;
+    width: 680px;
+}
+#coffeeofthemonth {
+    float: right;
+}
+#coffeeofthemonth > img {
+    width:300px;
+    margin-top: 20px;
+}
+#coffeeofthemonth > figcaption > a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #100f0fe8;
+}
+#coffeeofthemonth > figcaption > a:hover, #coffeeofthemonth > figcaption > a:focus {
+    color: orange;
+    text-decoration:underline;
+}
+#welcometext {
+    float: left;
+    width: 70%;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    column-count: 2;
+    column-gap: 10px;
+    font-family: Garamond;
+    font-weight: 500;
+}
+#welcometext > header {
+    color: #603813;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#events {
+    float: right;
+    width: 30%;
+    height: 100px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    margin-right:-10px;
+    background-color: antiquewhite;
+    border: 1px solid #381f09;
+}
+#events > header {
+    margin-left: 10px;
+    color: #603813;
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+#events > ul {
+    list-style: none;
+}
+#events > ul >li {
+    margin-bottom: 3px;
+    
+}
+
+#events > ul > li > a {
+    color: black;
+    /*remove the underline from the link*/
+    text-decoration: none;
+    font-size: 16px;
+    font-style: italic;
+    
+}
+
+#events > ul > li > a:hover, #events > ul > li > a:focus {
+    color:orangered;
+    text-decoration:underline;
+}
+#bestselleres {
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    
+}
+.productarticle {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    column-count: 2;
+    column-gap: 40px;
+    display: inline-block;
+}
+#coffee1 {
+
+    height: fit-content;
+    width:280px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+#coffee2 {
+
+    height: fit-content;
+    width:280px;
+    margin-top: 8px;
+
+}
+#coffee3 {
+
+    height: fit-content;
+    width:280px;
+    margin-top: -1.5em;
+    margin-bottom: 10px;
+
+}
+#coffee4 {
+
+    height: fit-content;
+    width:280px;
+    margin-top: 3px;
+
+}
+.productarticlemoreinfo {
+    font-size: 12px;
+    color: #603813;
+    margin-top: 5px;
+}
+.addtocartbutton {
+    cursor:pointer;
+    padding: 4px 25px;
+    background: #60381335;
+    border: 1px solid #381f09;
+    /*border radius setup for add to cart button*/
+    border-radius: 8px;
+    /*border radius for different browser*/
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+
+    /*box shadow*/
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+    box-shadow: 0 0 4px rgba(0,0,0, .75);
+
+    
+    color: #f3f3f3;
+    font-size: 0.8em;
+    width: 80px;
+}
+.addtocartbutton > a:link, .addtocartbutton > a:visited {
+    color: black;
+    /*remove the underline from the link*/
+    text-decoration: none;
+}
+.addtocartbutton:hover, .addtocartbutton:focus {
+    background-color: #77410f;
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: #5c5045;
+    margin: 20px 0px 20px;
+    padding: 5px;
+    /*transform for the footer*/
+    /*transform: rotate(2deg); not looking good*/
+}
+.smalltesxt {
+    font-size: 10px;
+}
+/* ALl coffees*/
+.productarticlelargerfigure {
+    float: center;
+    font-size: x-large;
+    font-weight: bold;
+}
+.productarticlecontent {
+    float: center;
+    font-size: 20px;
+    color: black;
+    font-style: italic;
+}
+.productarticlewide {
+    float: left;
+}
+.blockheader {
+    font-size: 20px;
+    color: #603813;
+    padding: 15px;
+    margin: 8px 0px;
+    font-weight: bold;
+    font-style: helvetica;
+}
